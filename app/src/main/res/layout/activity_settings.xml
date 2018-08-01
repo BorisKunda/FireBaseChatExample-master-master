@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/DarkPurple"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <include layout="@layout/app_bar"  android:id="@+id/account_settings_page_toolbar"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/account_settings_page_toolbar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/defaultavatar" />
+
+    <TextView
+        android:id="@+id/AccountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="218dp"
+        android:text="Name"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/AccountStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="162dp"
+        android:text="Status"
+        android:textColor="#FFF"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/changeAccountImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:text="Change Image" />
+
+    <Button
+        android:id="@+id/changeAccountStatusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text=" Change Status" />
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <include layout="@layout/app_bar"  android:id="@+id/register_page_toolbar"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordRegisterContainerRgsr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="128dp"
+        app:passwordToggleEnabled="true"
+     >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/reg_password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="233dp"
+        android:hint="email" />
+
+    <EditText
+        android:id="@+id/reg_display_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="216dp"
+        android:hint="name" />
+
+    <Button
+        android:id="@+id/reg_create_btn"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="26dp"
+        android:background="#ff3d00"
+        android:text="create account" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="147dp"
+        android:text="Create a New Account"
+        android:textColor="#030303"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
